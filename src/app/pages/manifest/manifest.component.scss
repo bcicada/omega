@@ -1,0 +1,29 @@
+@import "../../../vars";
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: inherit;
+    margin: 0 1rem;
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: inherit;
+        border: 0.1rem solid $color-white;
+        padding: 1rem;
+        h1 {
+            font-size: 2rem;
+        }
+        h3 {
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+        p {
+            margin: 0.5rem 0;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    }
+}

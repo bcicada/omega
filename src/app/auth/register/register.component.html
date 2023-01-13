@@ -1,0 +1,66 @@
+<form>
+    <fieldset>
+        <legend>Register</legend>
+        <fieldset>
+            <legend>About you :</legend>
+            <div class="form-container">
+                <div class="form-item">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-item">
+                    <label for="fname">Firstname</label>
+                    <input type="text" name="fname" required>
+                </div>
+                <div class="form-item">
+                    <label for="nname">Nickname</label>
+                    <input type="text" name="nname" required>
+                </div>
+                <div class="form-item">
+                    <label for="ppicture">Link for your profile picture (only square : 512x512)</label>
+                    <input type="text" name="ppicture" required>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Your adress :</legend>
+            <div class="form-container">
+                <div class="form-item">
+                    <label for="snumber">Street number</label>
+                    <input type="text" name="snumber" required>
+                </div>
+                <div class="form-item">
+                    <label for="sname">Street name</label>
+                    <input type="text" name="sname" required>
+                </div>
+                <div class="form-item">
+                    <label for="pcode">Postal code</label>
+                    <input type="text" name="pcode" required>
+                </div>
+                <div class="form-item">
+                    <label for="city">City</label>
+                    <input type="text" name="city" required>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Auth info's :</legend>
+            <div class="form-container">
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-item">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" required>
+                </div>
+                <div class="form-item">
+                    <label for="pconfirm">Confirmation password</label>
+                    <input type="password" name="pconfirm" required>
+                </div>
+            </div>
+        </fieldset>
+        <button>Submit</button>
+    </fieldset>
+    <p>Already an account ? <a routerLink="/login">Click here !</a></p>
+</form>

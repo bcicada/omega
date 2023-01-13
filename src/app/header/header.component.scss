@@ -1,0 +1,47 @@
+@import "../../vars";
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: 4rem;
+    border-bottom: 0.1rem solid $color-white;
+    color: $color-white;
+    margin-bottom: 1rem;
+    #website-logo {
+        font-size: 2rem;
+        font-family: 'ubuntu-medium';
+    }
+    a {
+        font-family: 'ubuntu-light';
+        color: $color-white;
+        &:hover {
+            color: $color-green;
+        }
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        a {
+            display: flex;
+            align-items: center;
+            height: inherit;
+            padding: 0 1.5rem;
+        }
+    }
+    #account-auth {
+        height: inherit;
+        a {
+            display: flex;
+            align-items: center;
+            height: inherit;
+            padding: 0 1.5rem;
+            &:hover {
+                color: $color-low-red;
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import "../../../vars";
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    fieldset {
+        margin: 1rem;
+        border-radius: 0.1rem;
+        min-width: 30rem;
+        legend {
+            border: 0.1rem solid $color-white;
+            border-radius: 0.1rem;
+            color: $color-white;
+            font-family: 'ubuntu-regular';
+            font-size: 1rem;
+            padding: 0.25rem 0.5rem;
+            margin: 0 0.5rem;
+        }
+        .form-container {
+            margin: 1rem;
+            .form-item {
+                display: flex;
+                flex-direction: column;
+                margin: 0.5rem 0;
+                label {
+                    color: $color-white;
+                    font-family: 'ubuntu-light';
+                    margin-bottom: 0.2rem;
+                    &:hover {
+                        color: $color-yellow;
+                    }
+                }
+                select, input {
+                    border: 0.1rem solid $color-white;
+                    color: $color-white;
+                    background-color: $color-black;
+                    width: inherit;
+                }
+                .alert {
+                    height: 1rem;
+                    width: inherit;
+                    background-color: $color-low-red;
+                    font-family: 'ubuntu-bold-italic';
+                    font-size: 0.75rem;
+                    border: 0.1rem solid $color-white;
+                    border-top: none;
+                }
+            }
+        }
+        button {
+            margin: 1rem;
+            padding: 0.25rem 1rem;
+            width: -webkit-fill-available;
+            width: -moz-available;
+            font-family: 'ubuntu-bold';
+            color: $color-white;
+            border: 0.1rem solid $color-white;
+            &:hover {
+                border: 0.1rem solid $color-green;
+                color: $color-green;
+            }
+        }
+    }
+    a:hover {
+        color: $color-green;
+    }
+}

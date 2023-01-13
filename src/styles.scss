@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "vars";
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: $color_black;
+    color: $color_white;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'ubuntu-regular';
+}
+
+app-aside {
+    height: calc(100vh - 4.75rem - 5rem - 4rem);
+    min-width: 20vw;
+    color: $color-white;
+    margin: 0 1rem;
+}
+
+app-home {
+    margin: 0 1rem;
+    height: inherit;
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+app-login {
+    margin: 0 1rem;
+    height: inherit;
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+app-register {
+    margin: 0 1rem;
+    height: inherit;
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+app-contact {
+    margin: 0 1rem;
+    height: inherit;
+    width: -webkit-fill-available;
+    width: -moz-available;
+}

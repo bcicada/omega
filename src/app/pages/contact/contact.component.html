@@ -1,0 +1,28 @@
+<form>
+    <fieldset>
+        <legend>Contact us</legend>
+        <div class="form-container">
+            <div class="form-item">
+                <label for="email">Email</label>
+                <input type="email" required>
+            </div>
+            <div class="form-item">
+                <label for="subject">Subject</label>
+                <select name="subject" required>
+                    <option value="bug">Reporting a technical bug or error on the website</option>
+                    <option value="purchase">Requesting help navigating the website or completing a purchase</option>
+                    <option value="illegal">Reporting inappropriate or illegal content</option>
+                    <option value="information">Requesting information about products or services offered</option>
+                    <option value="suggestion">Making suggestions for improving the website</option>
+                    <option value="assistance">Requesting assistance with billing or delivery issues</option>
+                    <option value="privacy">Requesting information about the website's privacy and security policies</option>
+                </select>            
+            </div>
+            <div class="form-item">
+                <label for="message">Message</label>
+                <textarea name="message" cols="30" rows="5" placeholder="Write something..." required></textarea>
+            </div>
+        </div>
+        <button>Submit</button>
+    </fieldset>
+</form>

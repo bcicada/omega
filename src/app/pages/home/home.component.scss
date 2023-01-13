@@ -1,0 +1,45 @@
+@import "../../../vars";
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: inherit;
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: inherit;
+        border: 0.1rem solid $color-white;
+        padding: 1rem;
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            margin: 0.5rem 0;
+        }
+        #home-search-bar {
+            border: 0.1rem solid $color-white;
+            padding: 1rem;
+            input {
+                height: 2rem;
+                width: 25rem;
+                border-radius: 5px 0 0 5px;
+                border: 0.1rem solid $color-white;
+            }
+            button {
+                height: 2rem;
+                width: 10rem;
+                border-radius: 0 5px 5px 0;
+                border: 0.1rem solid $color-white;
+                background-color: $color-orange;
+            }
+        }
+    }
+    #home-article-top {
+        margin-bottom: 1rem;
+    }
+    #home-article-bottom {
+        margin-top: 1rem;
+    }
+}
