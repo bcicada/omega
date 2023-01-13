@@ -1,18 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { BreadcrumbService } from '../breadcrumb.service';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-ariane',
   templateUrl: './ariane.component.html',
   styleUrls: ['./ariane.component.scss']
 })
-export class ArianeComponent {
-  breadcrumb: string = "";
 
-  ngOnInit() {
-    this.breadcrumb = this.getBreadcrumbValue();
+export class ArianeComponent implements OnInit, OnDestroy {
+  breadcrumb?: string;
+  private unsubscribe$ = new Subject<void>();
+
+  constructor(private breadcrumbService: BreadcrumbService) { }
+
+  async ngOnInit() {
+    this.breadcrumbService.breadcrumb$
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(breadcrumb => {
+        if (breadcrumb) {
+          this.breadcrumb = breadcrumb;
+        }
+      });
   }
 
-  getBreadcrumbValue(): string {
-    // logique pour récupérer la valeur de la variable
-    return 'Value of the variable';
-  }}
+  ngOnDestroy() {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  }
+}

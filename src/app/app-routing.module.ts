@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ArianeComponent } from './ariane/ariane.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'orders', component:  OrdersComponent },
   { path: 'contact', component:  ContactComponent },
   { path: 'manifest', component:  ManifestComponent },
+  { path: 'ariane', component:  ArianeComponent },
 ];
 
 @NgModule({
