@@ -10,6 +10,11 @@
     list-style: none;
     text-decoration: none;
     font-family: 'ubuntu-regular';
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 app-aside {

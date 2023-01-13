@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "omega-cnam": {
+      "hosting": {
+        "omega": [
+          "omega-cnam"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "omega-cnam"
+  }
+}

@@ -97,6 +97,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "omega:build:production",
+            "firebaseProject": "omega-cnam",
+            "firebaseHostingSite": "omega-cnam"
+          }
         }
       }
     }
